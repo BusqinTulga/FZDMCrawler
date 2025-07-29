@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>风之动漫 漫画爬虫</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            margin: 20px 0 0 0;
+        }
+        .a_h1 {
+            color: black;
+        }
+        form {
+            text-align: center;
+        }
+        .input {
+            width: 80%;
+            height: 180px;
+            margin: 40px auto 0;
+            text-align: center;
+            font-size: 30px;
+        }
+        p {
+            color: red;
+            margin: 5px 0 0 0;
+        }
+        .submit {
+            width: 50%;
+            height: 60px;
+            margin-top: 40px;
+            border-radius: 3px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>
+    <a class="a_h1" href="https://manhua.fzdm.com/" target="_blank">风之动漫</a>
+    漫画爬虫 @Powered By
+    <a class="a_h1" href="https://github.com/MongolTulga">MongolTulga</a>
+</h1>
+
+<form action="/startCrawler" method="post">
+    <input class="input" placeholder="请输入要爬取的网站地址" name="url">
+    <p>*请输入列表页地址，不要输入详情页地址！请不要输入带漫画图片的地址！</p>
+    <p>
+        正确的例子：
+        <a href="https://manhua.fzdm.com/2/" target="_blank">https://manhua.fzdm.com/2/</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        错误的例子：
+        <a href="https://manhua.fzdm.com/2/Vol_001/" target="_blank">https://manhua.fzdm.com/2/Vol_001/</a>
+    </p>
+    <input class="input" placeholder="请输入要在本地存放的路径" name="savePath">
+    <p>*请务必输入一个以漫画为名的文件夹的绝对路径，并且确保磁盘有足够空间！（ps: 5000张漫画图片的大小是1G左右。）</p>
+    <p>
+        正确的例子：
+        <a href="#">D:\海贼王</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        错误的例子：
+        <a href="#">D:\\海贼王</a>&nbsp;&nbsp;<a href="#">D:/海贼王</a>&nbsp;&nbsp;<a href="#">\海贼王</a>
+    </p>
+    <input class="submit" type="submit" value="Link Start!">
+</form>
+</body>
+
+<script>
+    alert("欢迎使用风之动漫漫画爬虫程序！");
+    alert("请勿在程序运行时关闭命令提示符！\n\n" +
+        "如需暂停下载，请直接关闭命令提示符，下次重新爬取该网站即可。\n\n" +
+        "如需停止下载，直接关闭命令控制符即可。");
+</script>
+</html>
