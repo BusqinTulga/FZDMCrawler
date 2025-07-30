@@ -1,0 +1,7 @@
+services:
+  fzdm-crawler:
+    build: .
+    container_name: fzdm-crawler
+    ports:
+      - "8101:8080"
+    restart: unless-stopped
